@@ -2758,9 +2758,9 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#266c6f",
-    primaryBright: "#318a8e",
-    primaryDark: "#266c6f",
+    primary: "#2fc8f2",
+    primaryBright: "#17c2f1",
+    primaryDark: "#2fc8f2",
     secondary: "#7645D9",
     success: "#31D0AA",
     warning: "#FFB237",
@@ -2778,7 +2778,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#08060B", backgroundDisabled: "#849596", backgroundAlt: "#50AEB2", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#0f2a2bed", input: "#36888c", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#8decefb0", text: "#FFFFFF", textDisabled: "#d4d4d4", textSubtle: "#d5f526", borderColor: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#10161c", backgroundDisabled: "#849596", backgroundAlt: "#1e262f", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#0f2a2bed", input: "#10161c", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#8decefb0", text: "#FFFFFF", textDisabled: "#d4d4d4", textSubtle: "#c3c5cb", borderColor: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -3880,7 +3880,7 @@ var UserBlock = function (_a) {
 var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps, nextProps) { return prevProps.account === nextProps.account; });
 
 var Icons = IconModule;
-var Container = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n\n  ", " {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n"], ["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n\n  ", " {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n"])), function (_a) {
+var Container = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 50px;\n\n  ", " {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: flex-start;\n  }\n"], ["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 50px;\n\n  ", " {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: flex-start;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });

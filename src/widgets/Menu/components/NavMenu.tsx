@@ -22,8 +22,9 @@ const Container = styled.div`
 
   ${({ theme }) => theme.mediaQueries.nav} {
     display: flex;
+    flex: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
 
