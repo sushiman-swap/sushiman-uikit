@@ -2778,7 +2778,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#10161c", backgroundDisabled: "#849596", backgroundAlt: "#1e262f", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#0f2a2bed", input: "#10161c", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#8decefb0", text: "#FFFFFF", textDisabled: "#d4d4d4", textSubtle: "#c3c5cb", borderColor: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#10161c", backgroundDisabled: "#849596", backgroundAlt: "#1e262f", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#1e262f", input: "#10161c", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#000000b0", text: "#FFFFFF", textDisabled: "#d4d4d4", textSubtle: "#c3c5cb", borderColor: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -3880,7 +3880,7 @@ var UserBlock = function (_a) {
 var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps, nextProps) { return prevProps.account === nextProps.account; });
 
 var Icons = IconModule;
-var Container = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 50px;\n\n  ", " {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: flex-start;\n  }\n"], ["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 50px;\n\n  ", " {\n    display: flex;\n    flex: 1;\n    align-items: center;\n    justify-content: flex-start;\n  }\n"])), function (_a) {
+var Container = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 50px;\n\n  ", " {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n"], ["\n  display: none;\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 50px;\n\n  ", " {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -3900,13 +3900,10 @@ var NavMenu = function (_a) {
 var templateObject_1$4;
 
 var Wrapper = styled__default['default'].div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled__default['default'].nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 18px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 18px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
+var StyledNav = styled__default['default'].nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 18px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: transparent;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 18px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: transparent;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
-}, MENU_HEIGHT, function (_a) {
-    var theme = _a.theme;
-    return theme.nav.background;
-});
+}, MENU_HEIGHT);
 var BodyWrapper = styled__default['default'].div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
 var Inner = styled__default['default'].div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n"])), function (_a) {
     var showMenu = _a.showMenu;
