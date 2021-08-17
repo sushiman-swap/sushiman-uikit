@@ -18,6 +18,7 @@ const Container = styled.div`
   display: none;
   overflow-y: auto;
   overflow-x: hidden;
+  margin-left: 50px;
 
   ${({ theme }) => theme.mediaQueries.nav} {
     display: flex;
