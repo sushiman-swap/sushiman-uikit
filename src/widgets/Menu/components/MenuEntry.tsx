@@ -6,6 +6,7 @@ import { MENU_ENTRY_HEIGHT } from "../config";
 
 export interface Props {
   secondary?: boolean;
+  hideShadow?: boolean;
   isActive?: boolean;
   theme: DefaultTheme;
 }
@@ -35,7 +36,7 @@ const MenuEntry = styled.div<Props>`
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.isDark ? theme.colors.background : "#fbdee8" : "transparent")};
   color: ${({ theme }) => theme.isDark ? theme.colors.textSubtle : "#F04D92"};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
+  box-shadow: ${({ isActive, hideShadow, theme }) => (!hideShadow && isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
 
   a {
     display: flex;

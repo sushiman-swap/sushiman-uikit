@@ -10,6 +10,7 @@ import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import NavMenu from "./components/NavMenu";
 
 const Wrapper = styled.div`
   position: relative;
@@ -122,6 +123,7 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
+        <NavMenu isPushed={isPushed} links={links} />
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
           {/* {profile && <Avatar profile={profile} />} */}
