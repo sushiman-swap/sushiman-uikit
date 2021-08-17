@@ -25,7 +25,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 8px;
+  padding-left: 18px;
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
