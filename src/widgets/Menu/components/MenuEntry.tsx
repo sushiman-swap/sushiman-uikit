@@ -35,7 +35,7 @@ const MenuEntry = styled.div<Props>`
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.isDark ? theme.colors.background : "#fbdee8" : "transparent")};
-  color: ${({ theme }) => theme.isDark ? theme.colors.textSubtle : "#F04D92"};
+  color: ${({ theme }) => theme.isDark ? theme.colors.text : "#F04D92"};
   box-shadow: ${({ isActive, hideShadow, theme }) => (!hideShadow && isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
 
   a {
@@ -46,7 +46,7 @@ const MenuEntry = styled.div<Props>`
   }
 
   svg {
-    fill: ${({ theme }) => theme.isDark ? theme.colors.textSubtle : '#F04D92'};
+    fill: ${({ theme }) => theme.isDark ? theme.colors.text : '#F04D92'};
   }
 
   &:hover {

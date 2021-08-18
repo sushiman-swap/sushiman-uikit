@@ -3503,13 +3503,13 @@ var MenuEntry = styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTem
     return (secondary ? theme.isDark ? theme.colors.background : "#fbdee8" : "transparent");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.isDark ? theme.colors.textSubtle : "#F04D92";
+    return theme.isDark ? theme.colors.text : "#F04D92";
 }, function (_a) {
     var isActive = _a.isActive, hideShadow = _a.hideShadow, theme = _a.theme;
     return (!hideShadow && isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.isDark ? theme.colors.textSubtle : '#F04D92';
+    return theme.isDark ? theme.colors.text : '#F04D92';
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.tertiary;
