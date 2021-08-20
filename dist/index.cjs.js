@@ -3584,7 +3584,7 @@ var MenuLink = function (_a) {
     var isHttpLink = (href === null || href === void 0 ? void 0 : href.startsWith("http")) || (href === null || href === void 0 ? void 0 : href.startsWith("mailto"));
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : reactRouterDom.NavLink;
-    var props = isHttpLink ? { href: href } : { to: href };
+    var props = isHttpLink ? { href: href, target: "_blank" } : { to: href };
     return React__default['default'].createElement(Tag, __assign({}, props, otherProps));
 };
 
